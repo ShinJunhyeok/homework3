@@ -1,0 +1,38 @@
+.wrap {
+    .text {
+        dt {
+            height: 40px;
+            font-size: 28px;
+            font-weight: 700;
+            color: #808080;
+            line-height: 40px;
+            margin-bottom: 10px;
+            position: relative;
+            cursor: pointer;
+            em {
+                position: absolute;
+                right: 0;
+                top: 4px;
+                transition: 0.4s;
+            }
+            &.on {
+                color: tomato;
+                em {
+                    rotate: -90deg;
+                }
+            }
+        }
+        dd {
+            font-size: 15px;
+            border-bottom: 2px solid #808080;
+            white-space: pre-wrap;
+            word-break: keep-all;
+            transition: 0.4s ease-in-out;
+            overflow: hidden;
+            height: 0;
+            &.on {
+                height: 330px;
+            }
+        }
+    }
+}
